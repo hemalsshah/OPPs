@@ -1,0 +1,10 @@
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\bin\Debug\DTOLayer.dll
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DataAccessLayer\bin\Debug\DTOLayer.pdb

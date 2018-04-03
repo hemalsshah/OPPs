@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IMSDevelopmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ACTIVITY_MASTER">
+    <Key>
+      <PropertyRef Name="ACTIVITY_CODE" />
+    </Key>
+    <Property Name="ACTIVITY_CODE" Type="Int32" Nullable="false" />
+    <Property Name="ACTIVITY_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACTIVITY_URL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SERVICE_CODE" Type="Int32" Nullable="false" />
+    <Property Name="IS_MENU" Type="Boolean" />
+    <Property Name="ISACTIVE" Type="Boolean" Nullable="false" />
+    <Property Name="CREATEDDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATEDBY" Type="Int64" Nullable="false" />
+    <Property Name="MODIFIEDDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFIEDBY" Type="Int64" />
+    <Property Name="IP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
+    <Property Name="ACTIVITY_DISPLAY_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsMaster" Type="Boolean" Nullable="false" />
+    <Property Name="ShowDependency" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AM_Item_Master">
+    <Key>
+      <PropertyRef Name="Item_ID" />
+    </Key>
+    <Property Name="Item_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Item_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Item_Description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Asset_SubType_ID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="IsConsumable" Type="Boolean" Nullable="false" />
+    <Property Name="IsProvisional" Type="Boolean" Nullable="false" />
+    <Property Name="IsServiciable" Type="Boolean" Nullable="false" />
+    <Property Name="ItemCategory_Master_ID" Type="Int32" Nullable="false" />
+    <Property Name="CreatedByID" Type="Int64" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedByIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ModifiedByID" Type="Int64" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedByIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GoverningBody_ID" Type="Int32" />
+    <Property Name="Institute_ID" Type="Int64" />
+    <Property Name="IsSerialNoRequired" Type="Boolean" Nullable="false" />
+    <Property Name="ItemExpiresInDays" Type="Int32" />
+    <Property Name="SerialNumber_Prefix" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="ResidualValue" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="Depreciation" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="ParQuantity" Type="Int32" />
+    <NavigationProperty Name="AM_ItemCategory_Master" Relationship="Self.FK_AM_Item_Master_ItemCategory_Master_ID_AM_ItemCategory_Master" FromRole="AM_Item_Master" ToRole="AM_ItemCategory_Master" />
+  </EntityType>
+  <EntityType Name="AM_ItemCategory_Master">
+    <Key>
+      <PropertyRef Name="ItemCategory_Master_ID" />
+    </Key>
+    <Property Name="ItemCategory_Master_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemCategory" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Asset_SubType_ID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="GoverningBodyID" Type="Int64" Nullable="false" />
+    <Property Name="InstituteID" Type="Int64" />
+    <Property Name="CreatedByID" Type="Int64" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedByIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ModifiedByID" Type="Int64" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedByIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AM_Item_Master" Relationship="Self.FK_AM_Item_Master_ItemCategory_Master_ID_AM_ItemCategory_Master" FromRole="AM_ItemCategory_Master" ToRole="AM_Item_Master" />
+  </EntityType>
+  <EntityType Name="BankMaster">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Name="BankID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BankName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Entered_On" Type="DateTime" Precision="3" />
+    <Property Name="Entered_By" Type="Int64" />
+    <Property Name="Modified_On" Type="DateTime" Precision="3" />
+    <Property Name="Modified_By" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Blood_Group_Master">
+    <Key>
+      <PropertyRef Name="Blood_Group_ID" />
+    </Key>
+    <Property Name="Blood_Group_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Blood_Group_Name" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Blood_Group_ShortName" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Int64" />
+    <Property Name="CreatedByIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifedBy" Type="Int64" />
+    <Property Name="ModifiedByIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Category_Mst">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category_Code" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Category_Name_EN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Category_Name_HI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Category_Keyword" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int64" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Int64" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsHorizontalCategory" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="IsGeneralCategory" Type="Boolean" Nullable="false" />
+    <Property Name="IsConvertible" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AM_Item_Master_ItemCategory_Master_ID_AM_ItemCategory_Master">
+    <End Role="AM_ItemCategory_Master" Type="Self.AM_ItemCategory_Master" Multiplicity="1" />
+    <End Role="AM_Item_Master" Type="Self.AM_Item_Master" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AM_ItemCategory_Master">
+        <PropertyRef Name="ItemCategory_Master_ID" />
+      </Principal>
+      <Dependent Role="AM_Item_Master">
+        <PropertyRef Name="ItemCategory_Master_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="IMSDevelopmentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ACTIVITY_MASTER" EntityType="Self.ACTIVITY_MASTER" />
+    <EntitySet Name="AM_Item_Master" EntityType="Self.AM_Item_Master" />
+    <EntitySet Name="AM_ItemCategory_Master" EntityType="Self.AM_ItemCategory_Master" />
+    <EntitySet Name="BankMasters" EntityType="Self.BankMaster" />
+    <EntitySet Name="Blood_Group_Master" EntityType="Self.Blood_Group_Master" />
+    <EntitySet Name="Category_Mst" EntityType="Self.Category_Mst" />
+    <AssociationSet Name="FK_AM_Item_Master_ItemCategory_Master_ID_AM_ItemCategory_Master" Association="Self.FK_AM_Item_Master_ItemCategory_Master_ID_AM_ItemCategory_Master">
+      <End Role="AM_ItemCategory_Master" EntitySet="AM_ItemCategory_Master" />
+      <End Role="AM_Item_Master" EntitySet="AM_Item_Master" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IMSDevelopmentModelStoreContainer" CdmEntityContainer="IMSDevelopmentEntities">
+    <EntitySetMapping Name="ACTIVITY_MASTER">
+      <EntityTypeMapping TypeName="IMSDevelopmentModel.ACTIVITY_MASTER">
+        <MappingFragment StoreEntitySet="ACTIVITY_MASTER">
+          <ScalarProperty Name="ACTIVITY_CODE" ColumnName="ACTIVITY_CODE" />
+          <ScalarProperty Name="ACTIVITY_NAME" ColumnName="ACTIVITY_NAME" />
+          <ScalarProperty Name="ACTIVITY_URL" ColumnName="ACTIVITY_URL" />
+          <ScalarProperty Name="SERVICE_CODE" ColumnName="SERVICE_CODE" />
+          <ScalarProperty Name="IS_MENU" ColumnName="IS_MENU" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="CREATEDDATE" ColumnName="CREATEDDATE" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="MODIFIEDDATE" ColumnName="MODIFIEDDATE" />
+          <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="ACTIVITY_DISPLAY_NAME" ColumnName="ACTIVITY_DISPLAY_NAME" />
+          <ScalarProperty Name="IsMaster" ColumnName="IsMaster" />
+          <ScalarProperty Name="ShowDependency" ColumnName="ShowDependency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AM_Item_Master">
+      <EntityTypeMapping TypeName="IMSDevelopmentModel.AM_Item_Master">
+        <MappingFragment StoreEntitySet="AM_Item_Master">
+          <ScalarProperty Name="Item_ID" ColumnName="Item_ID" />
+          <ScalarProperty Name="Item_Name" ColumnName="Item_Name" />
+          <ScalarProperty Name="Item_Description" ColumnName="Item_Description" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="Asset_SubType_ID" ColumnName="Asset_SubType_ID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsConsumable" ColumnName="IsConsumable" />
+          <ScalarProperty Name="IsProvisional" ColumnName="IsProvisional" />
+          <ScalarProperty Name="IsServiciable" ColumnName="IsServiciable" />
+          <ScalarProperty Name="ItemCategory_Master_ID" ColumnName="ItemCategory_Master_ID" />
+          <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedByIP" ColumnName="CreatedByIP" />
+          <ScalarProperty Name="ModifiedByID" ColumnName="ModifiedByID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedByIP" ColumnName="ModifiedByIP" />
+          <ScalarProperty Name="GoverningBody_ID" ColumnName="GoverningBody_ID" />
+          <ScalarProperty Name="Institute_ID" ColumnName="Institute_ID" />
+          <ScalarProperty Name="IsSerialNoRequired" ColumnName="IsSerialNoRequired" />
+          <ScalarProperty Name="ItemExpiresInDays" ColumnName="ItemExpiresInDays" />
+          <ScalarProperty Name="SerialNumber_Prefix" ColumnName="SerialNumber_Prefix" />
+          <ScalarProperty Name="ResidualValue" ColumnName="ResidualValue" />
+          <ScalarProperty Name="Depreciation" ColumnName="Depreciation" />
+          <ScalarProperty Name="ParQuantity" ColumnName="ParQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AM_ItemCategory_Master">
+      <EntityTypeMapping TypeName="IMSDevelopmentModel.AM_ItemCategory_Master">
+        <MappingFragment StoreEntitySet="AM_ItemCategory_Master">
+          <ScalarProperty Name="ItemCategory_Master_ID" ColumnName="ItemCategory_Master_ID" />
+          <ScalarProperty Name="ItemCategory" ColumnName="ItemCategory" />
+          <ScalarProperty Name="Asset_SubType_ID" ColumnName="Asset_SubType_ID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="GoverningBodyID" ColumnName="GoverningBodyID" />
+          <ScalarProperty Name="InstituteID" ColumnName="InstituteID" />
+          <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedByIP" ColumnName="CreatedByIP" />
+          <ScalarProperty Name="ModifiedByID" ColumnName="ModifiedByID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedByIP" ColumnName="ModifiedByIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankMasters">
+      <EntityTypeMapping TypeName="IMSDevelopmentModel.BankMaster">
+        <MappingFragment StoreEntitySet="BankMaster">
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="Entered_On" ColumnName="Entered_On" />
+          <ScalarProperty Name="Entered_By" ColumnName="Entered_By" />
+          <ScalarProperty Name="Modified_On" ColumnName="Modified_On" />
+          <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Blood_Group_Master">
+      <EntityTypeMapping TypeName="IMSDevelopmentModel.Blood_Group_Master">
+        <MappingFragment StoreEntitySet="Blood_Group_Master">
+          <ScalarProperty Name="Blood_Group_ID" ColumnName="Blood_Group_ID" />
+          <ScalarProperty Name="Blood_Group_Name" ColumnName="Blood_Group_Name" />
+          <ScalarProperty Name="Blood_Group_ShortName" ColumnName="Blood_Group_ShortName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedByIP" ColumnName="CreatedByIP" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifedBy" ColumnName="ModifedBy" />
+          <ScalarProperty Name="ModifiedByIP" ColumnName="ModifiedByIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category_Mst">
+      <EntityTypeMapping TypeName="IMSDevelopmentModel.Category_Mst">
+        <MappingFragment StoreEntitySet="Category_Mst">
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+          <ScalarProperty Name="Category_Name_EN" ColumnName="Category_Name_EN" />
+          <ScalarProperty Name="Category_Name_HI" ColumnName="Category_Name_HI" />
+          <ScalarProperty Name="Category_Keyword" ColumnName="Category_Keyword" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="IsHorizontalCategory" ColumnName="IsHorizontalCategory" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsGeneralCategory" ColumnName="IsGeneralCategory" />
+          <ScalarProperty Name="IsConvertible" ColumnName="IsConvertible" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

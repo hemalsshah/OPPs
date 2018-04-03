@@ -1,0 +1,5 @@
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DTOLayer\bin\Debug\DTOLayer.dll
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DTOLayer\bin\Debug\DTOLayer.pdb
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DTOLayer\obj\Debug\DTOLayer.csprojResolveAssemblyReference.cache
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DTOLayer\obj\Debug\DTOLayer.dll
+D:\Hemal\E_Drive_of_old_machine\My Projects\OOPs\DTOLayer\obj\Debug\DTOLayer.pdb
